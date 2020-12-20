@@ -1,14 +1,12 @@
 package learn.unit.test;
 
+import learn.unit.test.conf.Config;
 import learn.unit.test.service.OtherService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -16,9 +14,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 //@Disabled
 //@ExtendWith(SpringExtension.class)
-//@ContextConfiguration(classes = Config.class)
-//@RunWith(SpringRunner.class)
-@SpringBootTest
+@ContextConfiguration(classes = Config.class)
+@RunWith(SpringRunner.class)
+//@SpringBootTest
 @Slf4j
 public class MyOrderTest {
     @Autowired
@@ -44,7 +42,7 @@ public class MyOrderTest {
         log.error("---Inside AfterAll---");
     }
 
-//    @org.junit.Test
+    @org.junit.Test
     @Test
     public void messageTest() {
         String msg = otherService.getMessage();

@@ -1,4 +1,4 @@
-package learn.unit.test;
+package learn.unit.test.conf;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
