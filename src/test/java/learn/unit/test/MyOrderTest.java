@@ -12,6 +12,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ * JUnit4 (Vintage api) 与 JUnit5 api (Jupiter) 互相独立
+ */
 //@Disabled
 //@ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = Config.class)
