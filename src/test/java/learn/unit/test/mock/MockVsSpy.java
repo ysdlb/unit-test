@@ -8,6 +8,12 @@ import org.mockito.Mock;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+/**
+ * 1. mock 与 spy 的区别
+ * 2. JUnit4 api 与 JUnit5 api 的使用区别: Extend vs Runner
+ * 3. Runner MockitoJUnitRunner 与 Extend MockExtension 的等效操作
+ */
+
 @Slf4j
 @ExtendWith(MockitoExtension.class)
 public class MockVsSpy {
