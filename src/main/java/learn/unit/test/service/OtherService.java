@@ -1,5 +1,6 @@
 package learn.unit.test.service;
 
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -23,5 +24,16 @@ public class OtherService {
             return true;
         }
         return false;
+    }
+
+    public Integer integer = 9999;
+    public int i = 9999;
+
+    public int getI() {
+        return i;
+    }
+
+    public Integer getInteger() {
+        return integer;
     }
 }
