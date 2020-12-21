@@ -50,6 +50,7 @@ public class MockitoTest3 {
 
         Mockito.when(someServiceMock.getSomething(Mockito.anyInt()))
                 .thenReturn(mockedStr);
+//        Mockito.doReturn(mockedStr).when(someServiceMock).getSomething(Mockito.anyInt());
 
 //        Mockito.when(someServiceMock.listSomething(Mockito.anyList()))
 //                .thenReturn(null);
