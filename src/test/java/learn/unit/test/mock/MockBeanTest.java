@@ -15,6 +15,10 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
+/**
+ * WebMvcTest 只会扫描少数类
+ * 原来的容器中貌似不存在 SomeService 相关的 Bean
+ */
 @WebMvcTest(SomeController.class)
 @Slf4j
 class MockBeanTest {
